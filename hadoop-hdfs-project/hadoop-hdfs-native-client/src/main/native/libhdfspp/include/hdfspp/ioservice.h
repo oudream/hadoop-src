@@ -59,6 +59,7 @@
 #define INCLUDE_HDFSPP_IOSERVICE_H_
 
 #include <memory>
+#include <functional>
 
 // forward decl
 namespace asio {
