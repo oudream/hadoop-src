@@ -88,12 +88,7 @@ int main(int argc, char **argv) {
     short newPerm = 0666;
     tTime newMtime, newAtime;
 
-#ifdef __cplusplus
-    printf("i am __cplusplus! i am __cplusplus! i am __cplusplus! ");
-    printf("i am __cplusplus! i am __cplusplus! i am __cplusplus! ");
-    printf("i am __cplusplus! i am __cplusplus! i am __cplusplus! ");
-#endif
-    fs = hdfsConnectNewInstance("10.31.58.86", 9000);
+    fs = hdfsConnectNewInstance("default", 0);
     if(!fs) {
         fprintf(stderr, "Oops! Failed to connect to hdfs!\n");
         exit(-1);
